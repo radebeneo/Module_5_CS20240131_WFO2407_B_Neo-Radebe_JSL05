@@ -19,7 +19,8 @@ const songs = [
     { title: "Hello", artist: "Adele", genre: "R&B" },
     { title: "LOVE", artist: "Kendrick Lamar", genre: "R&B" },
     { title: "Flashing Lights", artist: "Kanye West", genre: "Pop" },
-    { title: "Water", artist: "Tyla", genre: "Pop" }
+    { title: "Water", artist: "Tyla", genre: "Pop" },
+    { title: "Fountains", artist: "Drake", genre: "Pop" }
 ];
 
 
@@ -67,6 +68,9 @@ function generatePlaylist(guardians, songs) {
             songDiv.appendChild(songTitle);
             guardianDiv.appendChild(songDiv);
         });
+        
+        // Append the guardian's playlist to the main playlists div
+        playlistsDiv.appendChild(guardianDiv);
 
     });
 }
