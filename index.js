@@ -37,6 +37,12 @@ function generatePlaylist(guardians, songs) {
 
         // Filter songs based on guardian's preferred genre
         const playlist = songs.filter(song => song.genre === preferredGenre);
+
+        // Create a playlist container for each guardian
+        const guardianDiv = document.createElement("div");
+        guardianDiv.classList.add("playlist");
+        
+    });
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
