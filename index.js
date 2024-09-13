@@ -29,6 +29,7 @@ const guardians = {
 function generatePlaylist(guardians, songs) {
     // Use the map() function to create playlists for each Guardian
     // Your code here
+    const playlistsDiv = document.getElementById("playlists");
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
