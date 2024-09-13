@@ -11,16 +11,21 @@ const songs = [
     { title: "Come and Get Your Love", artist: "Redbone", genre: "Rock" },
     { title: "I'm Not in Love", artist: "10cc", genre: "Pop" },
     { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" },
+    { title: "Stop Tryna Be God", artist: "Travis Scott", genre: "Hip-Hop" },
     // Feel free to add even more songs
     { title: "Blinding Lights", artist: "The Weeknd", genre: "Pop" },
+    { title: "Lemons", artist: "AKA", genre: "Hip-Hop" },
     { title: "Shallow", artist: "Lady Gaga & Bradley Cooper", genre: "Pop" },
     { title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", genre: "Pop" },
     { title: "Bad Guy", artist: "Billie Eilish", genre: "Pop" },
     { title: "Hello", artist: "Adele", genre: "R&B" },
-    { title: "LOVE", artist: "Kendrick Lamar", genre: "R&B" },
-    { title: "Flashing Lights", artist: "Kanye West", genre: "Pop" },
+    { title: "HUMBLE", artist: "Kendrick Lamar", genre: "Hip-Pop" },
+    { title: "Flashing Lights", artist: "Kanye West", genre: "Hip-Hop" },
     { title: "Water", artist: "Tyla", genre: "Pop" },
-    { title: "Fountains", artist: "Drake", genre: "Pop" }
+    { title: "6PM in New York", artist: "Drake", genre: "Hip-Hop" },
+    { title: "Trippy", artist: "Anderson Paak.", genre: "Hip-Hop" },
+    { title: "Love Yourz", artist: "J.Cole", genre: "Hip-Hop" }
+
 ];
 
 
@@ -30,7 +35,7 @@ const guardians = {
     "Gamora": "Pop",
     "Drax": "R&B",
     "Rocket": "Rock",
-    "Groot": "Pop"
+    "Groot": "Hip-Hop"
     // Add preferences for Drax, Rocket, and Groot
 };
 
@@ -68,7 +73,7 @@ function generatePlaylist(guardians, songs) {
             songDiv.appendChild(songTitle);
             guardianDiv.appendChild(songDiv);
         });
-        
+
         // Append the guardian's playlist to the main playlists div
         playlistsDiv.appendChild(guardianDiv);
 
@@ -77,5 +82,4 @@ function generatePlaylist(guardians, songs) {
 
 // Call generatePlaylist and display the playlists for each Guardian
 generatePlaylist(guardians, songs);
-
 
