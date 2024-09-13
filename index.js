@@ -12,6 +12,14 @@ const songs = [
     { title: "I'm Not in Love", artist: "10cc", genre: "Pop" },
     { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" },
     // Feel free to add even more songs
+    { title: "Blinding Lights", artist: "The Weeknd", genre: "Pop" },
+    { title: "Shallow", artist: "Lady Gaga & Bradley Cooper", genre: "Pop" },
+    { title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", genre: "Pop" },
+    { title: "Bad Guy", artist: "Billie Eilish", genre: "Pop" },
+    { title: "Hello", artist: "Adele", genre: "R&B" },
+    { title: "LOVE", artist: "Kendrick Lamar", genre: "R&B" },
+    { title: "Flashing Lights", artist: "Kanye West", genre: "Pop" },
+    { title: "Water", artist: "Tyla", genre: "Pop" }
 ];
 
 
