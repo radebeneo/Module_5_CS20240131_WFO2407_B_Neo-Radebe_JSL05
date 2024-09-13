@@ -47,6 +47,19 @@ function generatePlaylist(guardians, songs) {
         guardianName.textContent = `${guardian}'s Playlist`;
         guardianDiv.appendChild(guardianName);
 
+        // Use map() to create the song elements for each song in the playlist
+        playlist.map(song => {
+            const songDiv = document.createElement("div");
+            songDiv.classList.add("song");
+            
+            const songTitle = document.createElement("p");
+            songTitle.classList.add("song-title");
+            songTitle.textContent = `${song.title} - ${song.artist}`;
+            
+            songDiv.appendChild(songTitle);
+            guardianDiv.appendChild(songDiv);
+        });
+
     });
 }
 
