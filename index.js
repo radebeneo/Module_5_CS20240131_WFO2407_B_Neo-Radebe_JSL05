@@ -41,7 +41,12 @@ function generatePlaylist(guardians, songs) {
         // Create a playlist container for each guardian
         const guardianDiv = document.createElement("div");
         guardianDiv.classList.add("playlist");
-        
+
+        // Add the Guardian's name
+        const guardianName = document.createElement("h2");
+        guardianName.textContent = `${guardian}'s Playlist`;
+        guardianDiv.appendChild(guardianName);
+
     });
 }
 
