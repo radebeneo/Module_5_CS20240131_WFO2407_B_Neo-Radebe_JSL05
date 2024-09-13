@@ -30,6 +30,10 @@ function generatePlaylist(guardians, songs) {
     // Use the map() function to create playlists for each Guardian
     // Your code here
     const playlistsDiv = document.getElementById("playlists");
+
+    // Use Object.keys(guardians) to get the array of guardian names and map() over it
+    Object.keys(guardians).map(guardian => {
+        const preferredGenre = guardians[guardian];
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
